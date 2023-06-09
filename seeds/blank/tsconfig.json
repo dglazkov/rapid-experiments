@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "extends": "{{npm_org_name}}/tsconfig/base.json"
+}

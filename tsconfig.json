@@ -1,0 +1,5 @@
+{
+  "extends": "@rapid-experiments/tsconfig/base.json",
+  "files": [],
+  "references": []
+}

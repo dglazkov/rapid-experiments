@@ -1,0 +1,47 @@
+{
+  "name": "{{npm_org_name}}/blank",
+  "version": "0.0.1",
+  "description": "Put description of the package here",
+  "exports": "./dist/src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "FORCE_COLOR=1 ava",
+    "build": "FORCE_COLOR=1 tsc --b",
+    "watch": "FORCE_COLOR=1 tsc --b --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{{repo_url}}"
+  },
+  "files": [
+    "dist"
+  ],
+  "ava": {
+    "files": [
+      "tests/**/*.ts"
+    ],
+    "workerThreads": false,
+    "typescript": {
+      "rewritePaths": {
+        "./": "dist/"
+      },
+      "compile": false
+    }
+  },
+  "keywords": [],
+  "author": "{{team_name}}",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "{{repo_url}}/issues"
+  },
+  "homepage": "{{repo_url}}#readme",
+  "devDependencies": {
+    "@ava/typescript": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@types/node": "^18.16.3",
+    "ava": "^5.2.0",
+    "typescript": "^5.0.4",
+    "{{npm_org_name}}/tsconfig": "*"
+  }
+}
