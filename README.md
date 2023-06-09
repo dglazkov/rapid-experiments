@@ -7,7 +7,7 @@ To use it as the template for your own project:
 :one: In a directory where you want to create your project.
 
 ```bash
-npx degit dglazkov/rapid-experiments
+npx degit dglazkov/rapid-experiments --mode=git
 ```
 
 :two: Replace various placeholders (each uses the `{{handlebar}}` syntax) throughout the repository:
