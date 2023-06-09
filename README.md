@@ -21,3 +21,5 @@ npx degit dglazkov/rapid-experiments
 - `repo_description` -- the description of your repository.
 
 :three: Replace this README with your own.
+
+If you find bugs, please file issues or submit PRs.
